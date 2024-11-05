@@ -99,6 +99,7 @@
             <artifactId>micrometer-registry-prometheus</artifactId>
             <version>${micrometer.version}</version>
         </dependency>
+
     </dependencies>
 
     <build>

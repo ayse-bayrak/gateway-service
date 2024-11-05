@@ -17,7 +17,7 @@ public class GatewayConfig {
                         .filters(f -> f
                                 .filter(authHeaderFilter)
                                 .rewritePath("/user-service/(?<path>.*)", "/${path}"))
-                        .uri("lb://user-service"))
+                        .uri("lb://user-service")) // load balancer
                 .route("project-service", r -> r
                         .path("/project-service/**")
                         .filters(f -> f
